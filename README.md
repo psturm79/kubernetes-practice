@@ -1,28 +1,36 @@
-'''kubernetes-practice/
-├── README.md
-├── kustomization.yaml
-├── namespaces/
-│   └── dev-namespace.yaml
-├── apps/
-│   ├── frontend/
-│   │   ├── deployment.yaml
-│   │   ├── service.yaml
-│   │   └── ingress.yaml
-│   ├── backend/
-│   │   ├── deployment.yaml
-│   │   ├── service.yaml
-│   │   └── configmap.yaml
-│   └── database/
-│       ├── statefulset.yaml
-│       ├── service.yaml
-│       └── pvc.yaml
-├── security/
+kubernetes-practice/
+├── 00-namespace/           # Workspace separation
+│   └── namespace.yaml
+│
+├── 01-frontend/            # Frontend app (nginx)
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   └── ingress.yaml
+│
+├── 02-backend/             # Backend app (API)
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   ├── configmap.yaml
+│   └── secret.yaml
+│
+├── 03-database/            # Stateful database
+│   ├── statefulset.yaml
+│   ├── service.yaml
+│   └── pvc.yaml
+│
+├── 04-security/            # Security policies
 │   ├── rbac.yaml
 │   └── networkpolicy.yaml
-├── monitoring/
+│
+├── 05-autoscaling/         # HPA & stress testing
+│   ├── hpa.yaml
+│   └── stress-pod.yaml
+│
+├── 06-monitoring/          # Observability stack
 │   ├── prometheus.yaml
 │   └── grafana.yaml
-└── autoscaling/
-    ├── hpa.yaml
-    └── stress-test-pod.yaml
+│
+├── kustomization.yaml       # Deploy all at once
+└── README.md
+
 
