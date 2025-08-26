@@ -1,4 +1,4 @@
-kubernetes-practice/
+'''kubernetes-practice/
 ├── README.md
 ├── kustomization.yaml
 ├── namespaces/
