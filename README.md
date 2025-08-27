@@ -1,4 +1,3 @@
-
 📂 New Folder Structure
 
 kubernetes-practice/
@@ -64,35 +63,37 @@ kubectl apply -f manifests/database/
 ⸻
 
 🎯 Topics Covered
-	•	✅ Deployments, Services & Ingress
-	•	✅ ConfigMaps & Secrets
-	•	✅ StatefulSets with PVCs
-	•	✅ RBAC & Network Policies
-	•	✅ Health Checks (Liveness & Readiness Probes)
-	•	✅ Horizontal Pod Autoscaler (HPA)
-	•	✅ Monitoring with Prometheus & Grafana
+
+•	✅ Deployments, Services & Ingress
+•	✅ ConfigMaps & Secrets
+•	✅ StatefulSets with PVCs
+•	✅ RBAC & Network Policies
+•	✅ Health Checks (Liveness & Readiness Probes)
+•	✅ Horizontal Pod Autoscaler (HPA)
+•	✅ Monitoring with Prometheus & Grafana
 
 ⸻
 
 📖 How to Use This Repo
-	1.	Clone the repo:
+
+1.	Clone the repo:
 
 git clone https://github.com/psturm79/kubernetes-practice.git
 cd kubernetes-practice
 
 
-	2.	Deploy apps:
+2.	Deploy apps:
 
 kubectl apply -f manifests/apps/frontend/
 kubectl apply -f manifests/apps/backend/
 
 
-	3.	Check pods:
+3.	Check pods:
 
 kubectl get pods
 
 
-	4.	Access NGINX frontend:
+4.	Access NGINX frontend:
 
 kubectl port-forward svc/nginx-service 8080:80
 
@@ -101,9 +102,9 @@ kubectl port-forward svc/nginx-service 8080:80
 ⸻
 
 🛠️ Requirements
-	•	Kubernetes cluster (Minikube, Kind, Docker Desktop, or cloud provider)
-	•	kubectl installed
-	•	Optional: kustomize for multi-env deployments
+•	Kubernetes cluster (Minikube, Kind, Docker Desktop, or cloud provider)
+•	kubectl installed
+•	Optional: kustomize for multi-env deployments
 
 ⸻
 
