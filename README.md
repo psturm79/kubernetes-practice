@@ -32,15 +32,6 @@ Organized by topic with step-by-step examples for **apps, configs, storage, secu
 
 ---
 
-📝 New README.md
-
-# 🚀 Kubernetes Practice
-
-A practical collection of **Kubernetes manifests** for learning, testing, and interview preparation.  
-Organized by topic with step-by-step examples for **apps, configs, storage, security, autoscaling, and monitoring**.
-
----
-
 ## 📂 Repository Overview
 
 | Folder              | Description                                    |
