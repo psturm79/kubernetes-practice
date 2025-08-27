@@ -1,50 +1,112 @@
-🚀 Kubernetes Practice
+Perfect 😈🔥 let’s rebuild your kubernetes-practice repo so it looks like a real engineer’s project, not a half-finished dump.
 
-A clean and structured collection of Kubernetes manifests for learning, testing, and interview preparation.
-Covers apps, configs, storage, security, autoscaling, and monitoring.
+Here’s the new repo structure + README.md you can literally copy-paste.
 
 ⸻
 
-📂 Repository Structure
-	•	01-namespace → Namespace definition
-	•	02-frontend → Nginx Deployment + Service + Ingress
-	•	03-backend → API Deployment + Service + ConfigMap + Secret
-	•	04-database → StatefulSet + Service + PersistentVolumeClaim
-	•	05-security → RBAC roles + Network Policies
-	•	06-autoscaling → Horizontal Pod Autoscaler + Stress Pod
-	•	07-monitoring → Prometheus + Grafana stack
-	•	kustomization.yaml → Deploy everything at once
-	•	README.md → Documentation
+📂 New Folder Structure
+
+kubernetes-practice/
+│── manifests/
+│   ├── apps/
+│   │   ├── frontend/         # NGINX Deployment + Service + Ingress
+│   │   └── backend/          # Backend API Deployment + Service
+│   ├── database/             # Stateful DB with PVC
+│   ├── security/             # RBAC + Network Policies
+│   ├── autoscaling/          # Horizontal Pod Autoscaler examples
+│   └── monitoring/           # Prometheus + Grafana stack
+│
+│── kustomization.yaml        # Deploy all at once
+│── README.md                 # Main documentation
+
+
+⸻
+
+📝 New README.md
+
+# 🚀 Kubernetes Practice
+
+A practical collection of **Kubernetes manifests** for learning, testing, and interview preparation.  
+Organized by topic with step-by-step examples for **apps, configs, storage, security, autoscaling, and monitoring**.
 
 ---
 
-🚀 Quick Start
+## 📂 Repository Overview
 
-Deploy everything with Kustomize:
+| Folder              | Description                                    |
+|---------------------|------------------------------------------------|
+| `manifests/apps`    | Frontend (NGINX) and Backend API deployments   |
+| `manifests/database`| StatefulSet + PersistentVolume for DB          |
+| `manifests/security`| RBAC roles, service accounts & network policies|
+| `manifests/autoscaling` | Horizontal Pod Autoscaler with demo app    |
+| `manifests/monitoring`  | Prometheus & Grafana stack                 |
+| `kustomization.yaml`| Deploys everything at once                     |
 
-kubectl apply -k .
+---
 
-Or deploy step by step:
+## 🚀 Quick Start
 
-kubectl apply -f 01-namespace/
-kubectl apply -f 02-frontend/
-kubectl apply -f 03-backend/
-kubectl apply -f 04-database/
-kubectl apply -f 05-security/
-kubectl apply -f 06-autoscaling/
-kubectl apply -f 07-monitoring/
+Apply everything at once:
 
-🎯 Topics Covered
+```bash
+kubectl apply -k manifests/
 
-✅ Deployments, Services & Ingress
-✅ ConfigMaps & Secrets
-✅ StatefulSets with PVCs
-✅ RBAC & Network Policies
-✅ Readiness & Liveness Probes
-✅ Horizontal Pod Autoscaler
-✅ Prometheus & Grafana integration
+Or apply a specific component:
+
+kubectl apply -f manifests/apps/frontend/
+kubectl apply -f manifests/database/
+
 
 ⸻
 
-✍️ Created by Pablo Sturm
+🎯 Topics Covered
+	•	✅ Deployments, Services & Ingress
+	•	✅ ConfigMaps & Secrets
+	•	✅ StatefulSets with PVCs
+	•	✅ RBAC & Network Policies
+	•	✅ Health Checks (Liveness & Readiness Probes)
+	•	✅ Horizontal Pod Autoscaler (HPA)
+	•	✅ Monitoring with Prometheus & Grafana
 
+⸻
+
+📖 How to Use This Repo
+	1.	Clone the repo:
+
+git clone https://github.com/psturm79/kubernetes-practice.git
+cd kubernetes-practice
+
+
+	2.	Deploy apps:
+
+kubectl apply -f manifests/apps/frontend/
+kubectl apply -f manifests/apps/backend/
+
+
+	3.	Check pods:
+
+kubectl get pods
+
+
+	4.	Access NGINX frontend:
+
+kubectl port-forward svc/nginx-service 8080:80
+
+
+
+⸻
+
+🛠️ Requirements
+	•	Kubernetes cluster (Minikube, Kind, Docker Desktop, or cloud provider)
+	•	kubectl installed
+	•	Optional: kustomize for multi-env deployments
+
+⸻
+
+👨‍💻 Author
+
+Pablo Sturm
+DevOps & Cloud Engineer | Azure | Kubernetes | Automation
+GitHub • LinkedIn
+
+⸻
