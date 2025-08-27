@@ -95,9 +95,9 @@ kubectl port-forward svc/nginx-service 8080:80
 
 🛠️ Requirements
 
-•	Kubernetes cluster (Minikube, Kind, Docker Desktop, or cloud provider)
-•	kubectl installed
-•	Optional: kustomize for multi-env deployments
+• Kubernetes cluster (Minikube, Kind, Docker Desktop, or cloud provider)
+• kubectl installed
+• Optional: kustomize for multi-env deployments
 
 ⸻
 
