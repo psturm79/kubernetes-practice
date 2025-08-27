@@ -1,53 +1,27 @@
-# 🚀 Kubernetes Practice
+🚀 Kubernetes Practice
 
-Clean and structured **Kubernetes manifests** for hands-on learning and interview prep.  
-Includes realistic use cases: apps, configs, storage, security, autoscaling, and monitoring.
+A clean and structured collection of Kubernetes manifests for learning, testing, and interview preparation.
+Covers apps, configs, storage, security, autoscaling, and monitoring.
 
----
+⸻
 
-## 📂 Repository Structure
-
-kubernetes-practice/
-├── 01-namespace/        # Namespace definition
-│   └── namespace.yaml
-│
-├── 02-frontend/         # Frontend app (nginx)
-│   ├── deployment.yaml
-│   ├── service.yaml
-│   └── ingress.yaml
-│
-├── 03-backend/          # Backend app (API)
-│   ├── deployment.yaml
-│   ├── service.yaml
-│   ├── configmap.yaml
-│   └── secret.yaml
-│
-├── 04-database/         # Stateful database
-│   ├── statefulset.yaml
-│   ├── service.yaml
-│   └── pvc.yaml
-│
-├── 05-security/         # Security policies
-│   ├── rbac.yaml
-│   └── networkpolicy.yaml
-│
-├── 06-autoscaling/      # HPA & stress testing
-│   ├── hpa.yaml
-│   └── stress-pod.yaml
-│
-├── 07-monitoring/       # Observability stack
-│   ├── prometheus.yaml
-│   └── grafana.yaml
-│
-├── kustomization.yaml   # Deploy all at once
-└── README.md
+📂 Repository Structure
+	•	01-namespace → Namespace definition
+	•	02-frontend → Nginx Deployment + Service + Ingress
+	•	03-backend → API Deployment + Service + ConfigMap + Secret
+	•	04-database → StatefulSet + Service + PersistentVolumeClaim
+	•	05-security → RBAC roles + Network Policies
+	•	06-autoscaling → Horizontal Pod Autoscaler + Stress Pod
+	•	07-monitoring → Prometheus + Grafana stack
+	•	kustomization.yaml → Deploy everything at once
+	•	README.md → Documentation
 
 ---
 
-## 🚀 Quick Start
+🚀 Quick Start
 
 Deploy everything with Kustomize:
-```bash
+
 kubectl apply -k .
 
 Or deploy step by step:
@@ -62,12 +36,15 @@ kubectl apply -f 07-monitoring/
 
 🎯 Topics Covered
 
-	•	Deployments, Services & Ingress
-	•	ConfigMaps & Secrets
-	•	StatefulSets with PVCs
-	•	RBAC & Network Policies
-	•	Readiness & Liveness Probes
-	•	Horizontal Pod Autoscaler
-	•	Prometheus & Grafana integration
+✅ Deployments, Services & Ingress
+✅ ConfigMaps & Secrets
+✅ StatefulSets with PVCs
+✅ RBAC & Network Policies
+✅ Readiness & Liveness Probes
+✅ Horizontal Pod Autoscaler
+✅ Prometheus & Grafana integration
 
+⸻
+
+✍️ Created by Pablo Sturm
 
