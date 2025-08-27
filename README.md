@@ -66,28 +66,23 @@ kubectl apply -f manifests/database/
 ⸻
 
 📖 How to Use This Repo
-	1.	Clone the repo:
+1.	Clone the repo:
 
 git clone https://github.com/psturm79/kubernetes-practice.git
 cd kubernetes-practice
 
-
-	2.	Deploy apps:
+2.	Deploy apps:
 
 kubectl apply -f manifests/apps/frontend/
 kubectl apply -f manifests/apps/backend/
 
-
-	3.	Check pods:
+3.	Check pods:
 
 kubectl get pods
 
-
-	4.	Access NGINX frontend:
+4.	Access NGINX frontend:
 
 kubectl port-forward svc/nginx-service 8080:80
-
-
 
 ⸻
 
