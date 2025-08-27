@@ -13,7 +13,6 @@ kubernetes-practice/
 │── kustomization.yaml        # Deploy all at once
 │── README.md                 # Main documentation
 
-
 ⸻
 
 📝 New README.md
@@ -59,7 +58,6 @@ Or apply a specific component:
 kubectl apply -f manifests/apps/frontend/
 kubectl apply -f manifests/database/
 
-
 ⸻
 
 🎯 Topics Covered
@@ -81,17 +79,14 @@ kubectl apply -f manifests/database/
 git clone https://github.com/psturm79/kubernetes-practice.git
 cd kubernetes-practice
 
-
 2. Deploy apps:
 
 kubectl apply -f manifests/apps/frontend/
 kubectl apply -f manifests/apps/backend/
 
-
 3. Check pods:
 
 kubectl get pods
-
 
 4. Access NGINX frontend:
 
