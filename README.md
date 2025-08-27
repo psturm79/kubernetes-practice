@@ -1,16 +1,26 @@
-kubernetes-practice/
-│── manifests/
-│   ├── apps/
-│   │   ├── frontend/         # NGINX Deployment + Service + Ingress
-│   │   └── backend/          # Backend API Deployment + Service
-│   ├── database/             # Stateful DB with PVC
-│   ├── security/             # RBAC + Network Policies
-│   ├── autoscaling/          # Horizontal Pod Autoscaler examples
-│   └── monitoring/           # Prometheus + Grafana stack
-│
-│── kustomization.yaml        # Deploy all at once
-│── README.md                 # Main documentation
+#  Kubernetes Practice
 
+This repository contains hands-on Kubernetes manifests for practicing and preparing for interviews. It covers essential use cases every DevOps/SRE engineer should know.
+
+---
+
+##  Repository Structure
+
+```text
+kubernetes-practice/
+├── 01-deployment/        # Basic NGINX Deployment
+│   └── nginx-deploy.yaml
+├── 02-service/           # ClusterIP Service for NGINX
+│   └── nginx-service.yaml
+├── 03-configmap-secret/  # Configuration & secrets
+│   ├── configmap.yaml
+│   └── secret.yaml
+├── 04-pod-env/           # Pod with environment variables
+│   └── app-pod.yaml
+├── 05-healthchecks/      # Liveness & readiness probes
+│   └── nginx-deploy-probes.yaml
+└── 06-hpa/               # Horizontal Pod Autoscaler
+    └── hpa.yaml
 ⸻
 
 📝 New README.md
