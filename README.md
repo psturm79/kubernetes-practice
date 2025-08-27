@@ -26,6 +26,15 @@ Organized by topic with step-by-step examples for **apps, configs, storage, secu
 
 ---
 
+📝 New README.md
+
+# 🚀 Kubernetes Practice
+
+A practical collection of **Kubernetes manifests** for learning, testing, and interview preparation.  
+Organized by topic with step-by-step examples for **apps, configs, storage, security, autoscaling, and monitoring**.
+
+---
+
 ## 📂 Repository Overview
 
 | Folder              | Description                                    |
@@ -66,23 +75,28 @@ kubectl apply -f manifests/database/
 ⸻
 
 📖 How to Use This Repo
-1.	Clone the repo:
+	1.	Clone the repo:
 
 git clone https://github.com/psturm79/kubernetes-practice.git
 cd kubernetes-practice
 
-2.	Deploy apps:
+
+	2.	Deploy apps:
 
 kubectl apply -f manifests/apps/frontend/
 kubectl apply -f manifests/apps/backend/
 
-3.	Check pods:
+
+	3.	Check pods:
 
 kubectl get pods
 
-4.	Access NGINX frontend:
+
+	4.	Access NGINX frontend:
 
 kubectl port-forward svc/nginx-service 8080:80
+
+
 
 ⸻
 
@@ -99,4 +113,4 @@ Pablo Sturm
 DevOps & Cloud Engineer | Azure | Kubernetes | Automation
 GitHub • LinkedIn
 
-⸻
+⸻⸻
