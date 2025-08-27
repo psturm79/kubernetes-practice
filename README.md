@@ -1,5 +1,3 @@
-📂 New Folder Structure
-
 kubernetes-practice/
 │── manifests/
 │   ├── apps/
